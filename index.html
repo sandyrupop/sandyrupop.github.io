@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Jia Zhang, MD - Research Scientist at Northeastern University, working on human-computer interaction for health: cognition, brain aging and mental health.">
+<meta name="author" content="Jia Zhang">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%232f6f9f' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 6.5c-2.2-1.9-5.7-1.7-7.5.6-2.4-.3-4.5 1.8-4.2 4.2-1.9 1.5-2.1 4.3-.4 6-.7 2.3.6 4.7 3 5.3.4 2.3 2.7 3.8 5 3.2 1.2 1.6 3.4 1.9 4.9.6'/%3E%3Cpath d='M16 6.5c2.2-1.9 5.7-1.7 7.5.6 2.4-.3 4.5 1.8 4.2 4.2 1.9 1.5 2.1 4.3.4 6 .7 2.3-.6 4.7-3 5.3-.4 2.3-2.7 3.8-5 3.2-1.2 1.6-3.4 1.9-4.9.6'/%3E%3Cpath d='M16 6.5c.3 6.6.2 13.3 0 19.9'/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jia Zhang">
+<meta property="og:description" content="Jia Zhang, MD - Research Scientist at Northeastern University, working on human-computer interaction for health: cognition, brain aging and mental health.">
+<meta property="og:url" content="https://sandyrupop.github.io/">
+<meta property="og:image" content="https://sandyrupop.github.io/avatar.jpg">
+<meta name="twitter:card" content="summary">
+
+<style>
+  /* standalone reset: the Claude artifact host normally supplies this */
+  :root {
+    color-scheme: light;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<title>Jia Zhang</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: sticky left identity rail, right reading column — the academic-homepage pattern.
+   Light, quiet, one blue accent; years and venues set in mono. */
+:root {
+  --bg:#ffffff; --bg-2:#f6f7f9; --card:#ffffff;
+  --ink:#1b1f24; --ink-2:#4d5560; --ink-3:#838c97;
+  --rule:#e4e7eb; --rule-2:#d2d7dd;
+  --accent:#2f6f9f; --accent-ink:#2f6f9f; --accent-soft:#eaf2f8;
+  --wash-1:#e9f1f8; --wash-2:#f7f1ea; --bg-trans:rgba(255,255,255,0.82);
+  --texture:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cg fill='%23b9c5d0' fill-opacity='.5'%3E%3Ccircle cx='7' cy='8' r='1.1'/%3E%3Ccircle cx='30' cy='19' r='1'/%3E%3Ccircle cx='16' cy='33' r='1.05'/%3E%3Ccircle cx='39' cy='41' r='.95'/%3E%3C/g%3E%3C/svg%3E");
+  --font-body:"Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#0f1317; --bg-2:#171c22; --card:#151a20;
+    --ink:#e8ecf1; --ink-2:#a9b3be; --ink-3:#737d88;
+    --rule:#262d35; --rule-2:#333c46;
+    --accent:#6aa9d6; --accent-ink:#7fb6de; --accent-soft:#17242e;
+    --wash-1:#121d26; --wash-2:#1d1b19; --bg-trans:rgba(15,19,23,0.82);
+    --texture:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cg fill='%234a6378' fill-opacity='.42'%3E%3Ccircle cx='7' cy='8' r='1.1'/%3E%3Ccircle cx='30' cy='19' r='1'/%3E%3Ccircle cx='16' cy='33' r='1.05'/%3E%3Ccircle cx='39' cy='41' r='.95'/%3E%3C/g%3E%3C/svg%3E");
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#0f1317; --bg-2:#171c22; --card:#151a20;
+  --ink:#e8ecf1; --ink-2:#a9b3be; --ink-3:#737d88;
+  --rule:#262d35; --rule-2:#333c46;
+  --accent:#6aa9d6; --accent-ink:#7fb6de; --accent-soft:#17242e;
+  --wash-1:#121d26; --wash-2:#1d1b19; --bg-trans:rgba(15,19,23,0.82);
+  --texture:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cg fill='%234a6378' fill-opacity='.42'%3E%3Ccircle cx='7' cy='8' r='1.1'/%3E%3Ccircle cx='30' cy='19' r='1'/%3E%3Ccircle cx='16' cy='33' r='1.05'/%3E%3Ccircle cx='39' cy='41' r='.95'/%3E%3C/g%3E%3C/svg%3E");
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background-color: var(--bg); color: var(--ink);
+  background-image:
+    radial-gradient(820px 420px at 10% -8%, var(--wash-1), transparent 72%),
+    radial-gradient(700px 360px at 96% -2%, var(--wash-2), transparent 70%),
+    var(--texture);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* hand-drawn brain watermark, behind everything */
+.bg-art {
+  position: fixed; top: 54px; right: -48px; width: 430px; height: 430px;
+  fill: none; stroke: var(--ink); stroke-width: 1.4;
+  stroke-linecap: round; stroke-linejoin: round;
+  opacity: 0.055; pointer-events: none; z-index: 0;
+}
+.topbar, .shell, footer { position: relative; z-index: 1; }
+a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px;
+}
+h1, h2, h3 { margin: 0; font-weight: 600; text-wrap: balance; letter-spacing: -0.015em; }
+p { margin: 0; }
+
+/* ---------- top nav ---------- */
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: var(--bg-trans); border-bottom: 1px solid var(--rule);
+  -webkit-backdrop-filter: blur(9px); backdrop-filter: blur(9px);
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 21; background: var(--bg);
+}
+.topbar-in {
+  max-width: 1040px; margin: 0 auto; display: flex; flex-wrap: wrap;
+  align-items: center; justify-content: space-between; gap: 8px 18px;
+  padding-block: 12px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.topbar .who { font-weight: 600; font-size: 0.95rem; }
+.topbar nav { display: flex; flex-wrap: wrap; gap: 18px; }
+.topbar nav a {
+  font-size: 0.88rem; color: var(--ink-2); text-decoration: none;
+}
+.topbar nav a:hover { color: var(--accent-ink); }
+
+/* ---------- shell ---------- */
+.shell {
+  max-width: 1040px; margin: 0 auto;
+  display: grid; grid-template-columns: 232px 1fr; gap: 0 52px;
+  padding-block: 44px 10px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- left rail ---------- */
+.rail { position: sticky; top: 92px; align-self: start; }
+.avatar-wrap { position: relative; width: 148px; max-width: 100%; }
+.avatar {
+  width: 100%; height: auto; aspect-ratio: 1; border-radius: 50%; display: block;
+  object-fit: cover; object-position: center 42%;
+  background: var(--accent-soft); max-width: 100%;
+}
+.avatar-ring {
+  position: absolute; inset: -10px; width: calc(100% + 20px); height: calc(100% + 20px);
+  display: block; fill: none; stroke: var(--accent); stroke-width: 2.4;
+  stroke-linecap: round; opacity: 0.55; pointer-events: none;
+}
+.rail h1 { font-size: 1.45rem; margin-top: 20px; }
+.rail .cred { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-3); margin-top: 2px; }
+.rail .tag { font-size: 0.9rem; color: var(--ink-2); margin-top: 10px; line-height: 1.5; }
+.rail ul { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 9px; }
+.rail li { display: flex; gap: 9px; align-items: baseline; font-size: 0.88rem; color: var(--ink-2); }
+.rail li svg {
+  flex: none; width: 16px; height: 16px; fill: none; stroke: var(--ink-3);
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  transform: translateY(3px);
+}
+.rail li a { text-decoration: none; }
+.rail li a:hover { text-decoration: underline; }
+.rail .mail {
+  font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-2);
+  word-break: break-all; line-height: 1.45; text-decoration: none;
+}
+.rail .mail:hover { color: var(--accent-ink); text-decoration: underline; }
+
+/* ---------- main ---------- */
+main { min-width: 0; }
+section { padding-block: 0 46px; }
+.sec-head { margin-bottom: 21px; }
+.sec-head h2 { font-size: 1.32rem; margin-bottom: 6px; }
+.squig {
+  display: block; width: 100%; height: 8px; fill: none;
+  stroke: var(--rule-2); stroke-width: 1.7; stroke-linecap: round;
+}
+.prose { display: grid; gap: 15px; max-width: 64ch; }
+.prose p { color: var(--ink-2); }
+.prose strong { color: var(--ink); font-weight: 600; }
+
+/* ---------- interests ---------- */
+.interests { display: grid; gap: 14px; max-width: 64ch; }
+.interests { gap: 20px; }
+.interest { display: grid; grid-template-columns: auto 1fr; gap: 0 15px; }
+.interest .ico {
+  flex: none; width: 30px; height: 30px; fill: none; stroke: var(--accent);
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  transform: translateY(3px);
+}
+.interest b { font-weight: 600; color: var(--ink); }
+.interest span { color: var(--ink-2); }
+
+/* ---------- publications ---------- */
+.pubnote {
+  font-size: 0.88rem; color: var(--ink-3); margin-bottom: 18px; max-width: 64ch;
+}
+.yearhead {
+  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500; color: var(--ink-3);
+  letter-spacing: 0.08em; padding-block: 22px 8px; font-variant-numeric: tabular-nums;
+}
+.yearhead:first-child { padding-top: 4px; }
+.pub { padding-block: 13px; border-top: 1px solid var(--rule); min-width: 0; }
+.pub-title { font-size: 0.99rem; line-height: 1.45; font-weight: 500; }
+.pub-title a { color: var(--ink); text-decoration: none; }
+.pub-title a:hover { color: var(--accent-ink); text-decoration: underline; }
+.pub-authors { font-size: 0.86rem; color: var(--ink-2); margin-top: 5px; line-height: 1.55; }
+.pub-authors .me { color: var(--ink); font-weight: 700; }
+.pub-meta {
+  margin-top: 5px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px;
+}
+.venue { font-size: 0.86rem; color: var(--ink-3); font-style: italic; }
+.badge {
+  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.04em;
+  padding: 2px 7px; border-radius: 3px; border: 1px solid var(--rule-2); color: var(--ink-3);
+}
+
+/* ---------- pager ---------- */
+.pager {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--rule);
+}
+.pg {
+  font: inherit; font-family: var(--font-mono); font-size: 0.78rem;
+  padding: 5px 10px; cursor: pointer; border-radius: 3px;
+  background: var(--card); color: var(--ink-2); border: 1px solid var(--rule-2);
+  font-variant-numeric: tabular-nums;
+}
+.pg:hover:not([disabled]) { border-color: var(--accent); color: var(--accent-ink); }
+.pg[disabled] { opacity: 0.38; cursor: default; }
+.pg[aria-current="page"] {
+  background: var(--accent-soft); border-color: var(--accent); color: var(--accent-ink);
+}
+.pgcount {
+  margin-left: auto; font-family: var(--font-mono); font-size: 0.74rem;
+  color: var(--ink-3); font-variant-numeric: tabular-nums;
+}
+
+footer {
+  max-width: 1040px; margin: 0 auto; padding-block: 26px 46px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+  border-top: 1px solid var(--rule); font-size: 0.8rem; color: var(--ink-3);
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px;
+}
+footer .src { font-family: var(--font-mono); font-size: 0.74rem; }
+
+@media (max-width: 800px) {
+  .shell { grid-template-columns: 1fr; gap: 34px; padding-block: 30px 10px; }
+  .rail { position: static; }
+  .avatar-wrap { width: 112px; }
+  .rail h1 { font-size: 1.35rem; }
+  .bg-art { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<svg class="bg-art" viewBox="0 0 220 220" aria-hidden="true">
+  <!-- hand-drawn brain, outline sketched as a bumpy gyral contour -->
+  <path d="M110 34c-14-11-35-10-46 4-15-2-28 11-26 26-11 9-13 27-2 37-5 14 4 29 18 32 3 14 17 23 31 20 7 10 21 12 30 4"/>
+  <path d="M110 34c14-11 35-10 46 4 15-2 28 11 26 26 11 9 13 27 2 37 5 14-4 29-18 32-3 14-17 23-31 20-7 10-21 12-30 4"/>
+  <path d="M110 34c2 30 1 61 0 91-1 16 0 29 3 42"/>
+  <path d="M83 64c-11 2-17 13-13 23M80 104c-10 3-14 15-9 24M137 62c11 2 17 13 13 23M140 103c10 3 14 15 9 24"/>
+  <!-- a few sketched sensing marks to the side -->
+  <path d="M186 96c7 6 11 15 11 24" stroke-dasharray="4 7"/>
+  <path d="M195 84c11 9 17 23 17 37" stroke-dasharray="4 7"/>
+</svg>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <span class="who">Jia Zhang</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#interests">Research</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </div>
+</div>
+
+<div class="shell">
+
+  <aside class="rail">
+    <div class="avatar-wrap">
+      <img class="avatar" src="avatar.jpg" width="420" height="420"
+           alt="Portrait of Jia Zhang" decoding="async">
+      <svg class="avatar-ring" viewBox="0 0 168 168" aria-hidden="true">
+        <path d="M92 7c42-3 76 30 75 70-1 42-35 77-76 76C48 152 11 118 8 77 5 38 39 5 80 4"/>
+      </svg>
+    </div>
+    <h1>Jia Zhang</h1>
+    <p class="cred">M.D.</p>
+    <p class="tag">Research Scientist<br>Northeastern University</p>
+    <ul>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.2 20.6c.9-1.2 6.3-6.9 6.2-10.9C18.3 6.2 15.5 3.5 12 3.6 8.6 3.7 5.9 6.4 5.8 9.8c-.1 4.1 5.5 9.9 6.4 10.8z"/><path d="M12.1 12c1.3.1 2.4-.9 2.4-2.2 0-1.2-1-2.2-2.3-2.2-1.3 0-2.3 1-2.2 2.3 0 1.1.9 2 2.1 2.1"/></svg>
+        <span>Boston, MA</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 10.4C6.3 8.7 9.1 7.1 12 5.6c2.9 1.4 5.7 3 8.5 4.8"/><path d="M5.6 11.6c-.1 2.6-.1 5.2 0 7.8M9.2 11.5c-.1 2.7-.1 5.3 0 8M14.8 11.5c.1 2.7.1 5.3 0 8M18.4 11.6c.1 2.6.1 5.2 0 7.8"/><path d="M3.2 19.8c5.9-.3 11.7-.3 17.6 0"/></svg>
+        <span>Northeastern University</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 6.8c-.2 3.5-.2 7 0 10.5 0 .5.4.9.9.9 5.1.2 10.1.2 15.2 0 .5 0 .9-.4.9-.9.2-3.5.2-7 0-10.5 0-.5-.4-.9-.9-.9-5.1-.2-10.1-.2-15.2 0-.5 0-.9.4-.9.9z"/><path d="M4.2 7.4c2.6 2.1 5.2 4 7.9 5.8 2.7-1.8 5.3-3.7 7.9-5.8"/></svg>
+        <a class="mail" href="mailto:j.zhang1@northeastern.edu">j.zhang1@northeastern.edu</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.6 9.2C5.7 7.7 8.8 6.3 12 5c3.2 1.3 6.3 2.7 9.4 4.2-3.1 1.6-6.2 3-9.4 4.4-3.2-1.4-6.3-2.8-9.4-4.4z"/><path d="M6.4 11.3c-.1 1.8-.1 3.5 0 5.3 1.8 1.3 3.7 1.9 5.6 1.9 1.9 0 3.8-.6 5.6-1.9.1-1.8.1-3.5 0-5.3"/><path d="M21.3 9.4c.2 1.8.2 3.5 0 5.3"/></svg>
+        <span><a href="https://scholar.google.com/citations?user=Dr5psI8AAAAJ&amp;hl=en">Google Scholar</a></span>
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+
+    <section id="about">
+      <div class="sec-head">
+        <h2>About me</h2>
+        <svg class="squig" viewBox="0 0 300 8" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M2 5.1c25-2.9 50-3.8 75-2.7 25 1.1 50 3 75 2.8 25-.2 50-2.4 74-3.3 24-.9 49-.4 72 1.6"/></svg>
+      </div>
+      <div class="prose">
+        <p>
+          Hi, I&rsquo;m Jia. I&rsquo;m a <strong>Research Scientist at Northeastern
+          University</strong>, working on <strong>human&ndash;computer interaction for
+          health</strong> &mdash; in particular, how it can help measure <strong>brain
+          aging</strong>: <strong>cognition</strong> and <strong>mental health</strong>.
+          Both are usually measured only in the clinic, in short visits. I work on what can be
+          measured in everyday life instead, and on how people use the systems that do it.
+        </p>
+        <p>
+          I trained as an <strong>attending physician in neurology</strong> at
+          <strong>Beijing Tiantan Hospital</strong>, Capital Medical University. My earlier
+          research was on stroke, cerebrovascular disease, and cognition-related disorders.
+        </p>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="sec-head">
+        <h2>Research interests</h2>
+        <svg class="squig" viewBox="0 0 300 8" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M2 3.4c24 2.6 49 3.6 74 2.9 25-.7 50-3 75-3.2 25-.2 50 1.8 74 2.9 24 1.1 49 .7 73-1.4"/></svg>
+      </div>
+      <div class="interests">
+        <div class="interest">
+          <svg class="ico" viewBox="0 0 30 30" aria-hidden="true">
+            <path d="M7.6 3.9c4.8-.4 9.6-.4 14.4 0 .9.1 1.6.8 1.6 1.7.3 6.1.3 12.3 0 18.4 0 .9-.7 1.6-1.6 1.7-4.8.4-9.6.4-14.4 0-.9-.1-1.6-.8-1.6-1.7-.3-6.1-.3-12.3 0-18.4 0-.9.7-1.6 1.6-1.7z"/>
+            <path d="M9.8 13.1c1.4.2 2-3.6 3.4-3.5 1.3.1 1.7 6.7 3.1 6.7 1.3 0 1.8-3.2 3.2-3.1"/>
+            <path d="M14.3 20.6c-.8 0-1.4.7-1.3 1.5.1.7.7 1.2 1.4 1.2.8 0 1.4-.7 1.3-1.5-.1-.7-.7-1.2-1.4-1.2z"/>
+          </svg>
+          <p><b>HCI for health.</b>
+          <span>Designing and studying interactive systems for health assessment, and how
+          patients, older adults, and clinicians actually use them.</span></p>
+        </div>
+        <div class="interest">
+          <svg class="ico" viewBox="0 0 30 30" aria-hidden="true">
+            <path d="M15 5.6c-2.1-1.8-5.4-1.6-7.1.6-2.3-.3-4.3 1.7-4 4-1.8 1.4-2 4.1-.4 5.7-.7 2.2.6 4.5 2.9 5 .4 2.2 2.6 3.6 4.8 3 1.1 1.5 3.2 1.8 4.6.6"/>
+            <path d="M15 5.6c2.1-1.8 5.4-1.6 7.1.6 2.3-.3 4.3 1.7 4 4 1.8 1.4 2 4.1.4 5.7.7 2.2-.6 4.5-2.9 5-.4 2.2-2.6 3.6-4.8 3-1.1 1.5-3.2 1.8-4.6.6"/>
+            <path d="M15 5.6c.3 6.3.2 12.6 0 18.9"/>
+            <path d="M11 10.3c-1.6.3-2.4 2-1.8 3.4M10.6 16.5c-1.4.5-2 2.2-1.2 3.4M19 10.2c1.6.3 2.4 2 1.8 3.4M19.4 16.4c1.4.5 2 2.2 1.2 3.4"/>
+          </svg>
+          <p><b>Cognition and brain aging.</b>
+          <span>Objective, repeatable markers of cognitive change drawn from everyday
+          behavior, alongside conventional assessment.</span></p>
+        </div>
+        <div class="interest">
+          <svg class="ico" viewBox="0 0 30 30" aria-hidden="true">
+            <path d="M3.4 23.4c7.8-.4 15.6-.4 23.4 0"/>
+            <path d="M4.3 19.2c2.1-.2 2.8-8 4.9-8 2.1 0 2.5 10.3 4.5 10.3 2.1 0 2.6-13.3 4.6-13.3 2 0 2.6 8.8 4.5 8.8 1.1 0 1.8-1.7 2.8-3.1"/>
+            <path d="M7.1 26.6c0-.9 0-1.8-.1-2.7M12.7 26.6c0-.9 0-1.8-.1-2.7M18.3 26.6c0-.9 0-1.8-.1-2.7M23.9 26.6c0-.9 0-1.8-.1-2.7"/>
+          </svg>
+          <p><b>Mental health monitoring.</b>
+          <span>Low-burden, longitudinal assessment outside the clinic rather than at a
+          single visit.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="sec-head">
+        <h2>Publications</h2>
+        <svg class="squig" viewBox="0 0 300 8" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M2 4.6c25-2.4 50-3.1 75-2.1 25 1 50 2.6 75 2.4 25-.2 50-2 74-2.8 24-.8 49-.3 72 1.8"/></svg>
+      </div>
+      <p class="pubnote">
+        44 indexed works, newest first. Titles link to a Google&nbsp;Scholar lookup.
+      </p>
+      <div id="pubs"></div>
+      <div class="pager" id="pager"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span>&copy; 2026 Jia Zhang</span>
+  <span class="src">Publication data from Google Scholar, November 2026</span>
+</footer>
+
+<script>
+var PUBS = [
+ {t:"Spatiotemporal multi-omics profiling of secondary brain injury after intracerebral hemorrhage in an optimized autologous blood-induced mouse model with human tissue validation",a:"Y Du, G Li, Y Lin, Z Ji, Y Shi, X Zhang, N Zhou, J Zhang, K Kang, X Zhao, …",v:"Experimental Neurology, 115650",y:2026},
+ {t:"Assessment of perivascular adipose tissue attenuation using dual-layer spectral-detector CTA for identification of symptomatic carotid plaques",a:"T Chen, J Zhang, S Li, Y Zhao, X Zhang, X Pei, J Lv, Y Geng, X Lu, Y Zhou, …",v:"Japanese Journal of Radiology 43(12), 1953-1961",y:2025},
+ {t:"Glycemic control and asymptomatic carotid plaque and carotid intima-media thickness",a:"J Zhang, X Song, G Zhang, S Chen, X Zhao, Q Zhang",v:"BMJ Open Diabetes Research & Care 13(3), e004786",y:2025,f:1},
+ {t:"Impact of beta-blockers on pneumonia, mortality and functional outcomes of patients with intracerebral hemorrhage: a retrospective multicenter study",a:"B Gao, A Wang, X Zhang, J Zhang, Y Ju, X Zhao, W Wang",v:"Journal of Inflammation Research, 9355-9364",y:2025},
+ {t:"Comparison of stress hyperglycemia ratio and glycemic gap on acute ICH in-hospital outcomes",a:"J Zhang, Q Zhang, H Gu, Q Zhou, Z Li, X Zhao",v:"Annals of Clinical and Translational Neurology 11(6), 1492-1501",y:2024,f:1},
+ {t:"Application of dual-layer spectral-detector computed tomography angiography in identifying symptomatic carotid atherosclerosis: a prospective observational study",a:"J Zhang, S Li, L Wu, H Wang, C Wang, Y Zhou, B Sui, X Zhao",v:"Journal of the American Heart Association 13(6), e032665",y:2024,f:1},
+ {t:"Effects of rhythm-control and rate-control strategies on cognitive function and dementia in atrial fibrillation: a systematic review and meta-analysis",a:"J Guo, Y Liu, J Jia, J Lu, D Wang, J Zhang, J Ding, X Zhao",v:"Age and Ageing 53(2), afae009",y:2024},
+ {t:"Intracerebral hemorrhage-induced brain injury in mice: the role of peroxiredoxin 2-Toll-like receptor 4 inflammatory axis",a:"Y Du, J Wang, J Zhang, N Li, G Li, X Liu, Y Lin, D Wang, K Kang, L Bian, …",v:"CNS Neuroscience & Therapeutics 30(3), e14681",y:2024},
+ {t:"Neutrophil-to-lymphocyte ratio, lymphocyte-to-monocyte ratio and platelet-to-lymphocyte ratio as predictors of short- and long-term outcomes in ischemic stroke patients with atrial fibrillation",a:"J Guo, D Wang, J Jia, J Zhang, Y Liu, J Lu, X Zhao, J Yan",v:"Journal of Inflammation Research, 6661-6672",y:2024},
+ {t:"Prevalence, risk factors and prognostic value of atrial fibrillation detected after stroke after haemorrhagic versus ischaemic stroke",a:"J Guo, Z Li, H Gu, K Yang, Y Liu, J Lu, D Wang, J Jia, J Zhang, Y Wang, …",v:"Stroke and Vascular Neurology 9(6), 652-659",y:2024},
+ {t:"Association between the C-reactive protein to albumin ratio and poor clinical outcome in patients with spontaneous intracerebral hemorrhage",a:"Y Du, Y Lin, A Wang, J Zhang, N Li, X Zhang, X Liu, D Wang, W Wang, …",v:"Journal of Stroke and Cerebrovascular Diseases 33(12), 108026",y:2024},
+ {t:"Multiomics and blood-based biomarkers of moyamoya disease: protocol of Moyamoya Omics Atlas (MOYAOMICS)",a:"P Ge, Z Yin, C Tao, C Zeng, X Yu, S Lei, J Li, Y Zhai, L Ma, Q He, C Liu, …",v:"Chinese Neurosurgical Journal 10(1), 5",y:2024},
+ {t:"Gait speed after mild stroke/transient ischemic attack was associated with long-term adverse outcomes: a cohort study",a:"N Li, J Zhang, Y Du, J Li, A Wang, X Zhao",v:"Annals of Clinical and Translational Neurology 11(12), 3163-3174",y:2024},
+ {t:"Patterns of atrial fibrillation, relevant cardiac structural and functional changes predict functional and cognitive outcomes in patients with ischemic stroke and atrial fibrillation",a:"J Guo, D Wang, J Jia, J Zhang, Y Liu, J Lu, Y Tian, X Zhao",v:"International Journal of Cardiology 407, 131966",y:2024},
+ {t:"Atrial cardiomyopathy and incident ischemic stroke risk: a systematic review and meta-analysis",a:"J Guo, D Wang, J Jia, J Zhang, F Peng, J Lu, X Zhao, Y Liu",v:"Journal of Neurology 270(7), 3391-3401",y:2023},
+ {t:"Impact of body mass index on efficacy and safety of ticagrelor versus clopidogrel in patients with minor stroke or transient ischemic attack",a:"J Zhang, A Wang, X Tian, X Meng, X Xie, J Jing, J Lin, Y Wang, Z Li, L Liu, …",v:"Canadian Medical Association Journal 195(26), E897-E904",y:2023,f:1},
+ {t:"Circulating microRNAs as potential biomarkers for ischemic stroke in patients with asymptomatic intracranial artery stenosis",a:"J Zhang, Y Shen, K Kang, J Lin, A Wang, S Li, S Wu, X Zhao, Q Zhang",v:"Cellular and Molecular Neurobiology 43(4), 1573-1582",y:2023,f:1},
+ {t:"Predictive nomogram models for unfavorable prognosis after aneurysmal subarachnoid hemorrhage: analysis from a prospective, observational cohort in China",a:"S Li, J Zhang, N Li, D Wang, X Zhao",v:"CNS Neuroscience & Therapeutics 29(11), 3567-3578",y:2023},
+ {t:"Cytotoxic edema and adverse clinical outcomes in patients with intracerebral hemorrhage",a:"N Li, J Guo, K Kang, J Zhang, Z Zhang, L Liu, X Liu, Y Du, Y Wang, …",v:"Neurocritical Care 38(2), 414-421",y:2023},
+ {t:"Multidimensional outcomes of IV thrombolysis in minor ischemic stroke: motor, psychocognitive, and dependence",a:"N Li, J Zhang, SJ Li, Y Du, Q Zhou, HQ Gu, XQ Zhao",v:"Neuropsychiatric Disease and Treatment, 2341-2351",y:2023},
+ {t:"Prognostic value of stress hyperglycaemia ratio in young patients with ischaemic stroke or transient ischaemic attack",a:"J Guo, J Jia, J Zhang, X Liu, G Li, X Zhao, Y Liu",v:"Cerebrovascular Diseases 52(5), 526-531",y:2023},
+ {t:"The impact of cumulative exposure to diverse lipid profiles on carotid intima-media thickness among an asymptomatic population",a:"Y Wang, G Zhang, J Wu, A Wang, X Zhang, J Zhang, S Wu, X Zhao, …",v:"Journal of Stroke and Cerebrovascular Diseases 32(12), 107443",y:2023},
+ {t:"Different indicators of stress-induced hyperglycemia and poor outcomes after spontaneous intracerebral hemorrhage",a:"X Song, J Zhang, W Wang, A Wang, X Zhang, S Li, C Wang, X Zhao, …",v:"medRxiv 2023.06.19.23291632",y:2023,n:"Preprint"},
+ {t:"Prediabetes and risk of stroke and its subtypes by hypertension status",a:"A Wang, J Zhang, Y Zuo, X Tian, S Chen, S Wu, X Zhao, Y Wang",v:"Diabetes/Metabolism Research and Reviews 38(4), e3521",y:2022},
+ {t:"Association between the C-reactive protein to albumin ratio and adverse clinical prognosis in patients with young stroke",a:"Y Du, J Zhang, N Li, J Guo, X Liu, L Bian, X Zhao, Y Liu",v:"Frontiers in Neurology 13, 989769",y:2022},
+ {t:"Association between the neutrophil-to-lymphocyte ratio and adverse clinical prognosis in patients with spontaneous intracerebral hemorrhage",a:"Y Du, A Wang, J Zhang, X Zhang, N Li, X Liu, W Wang, X Zhao, L Bian",v:"Neuropsychiatric Disease and Treatment, 985-993",y:2022},
+ {t:"Association between hemoglobin A1c and asymptomatic carotid intima-media thickness in middle-aged and elderly populations without diabetes",a:"M Zhou, J Zhang, J Jia, Y Liu, M Guo, X Lv, X Zhao, S Chen",v:"Nutrition, Metabolism and Cardiovascular Diseases 32(6), 1463-1469",y:2022},
+ {t:"Association of β-cell function and cognitive impairment in patients with abnormal glucose metabolism",a:"M Guo, J Jia, J Zhang, M Zhou, A Wang, S Chen, X Zhao",v:"BMC Neurology 22(1), 232",y:2022},
+ {t:"Effect of cumulative exposure to different lipid profiles on carotid intima-media thickness in an asymptomatic population",a:"Q Zhang, Y Wang, J Wu, A Wang, X Zhang, J Zhang, S Wu, X Zhao",v:"Venue not listed",y:2022},
+ {t:"Correction: Cytotoxic edema and adverse clinical outcomes in patients with intracerebral hemorrhage",a:"N Li, J Guo, K Kang, J Zhang, Z Zhang, L Liu, X Liu, Y Du, Y Wang, …",v:"Neurocritical Care 38(1), 217",y:2022,n:"Correction"},
+ {t:"Admission dehydration is associated with significantly lower in-hospital mortality after intracerebral hemorrhage",a:"B Gao, H Gu, W Yu, S Liu, Q Zhou, K Kang, J Zhang, Z Li, X Zhao, Y Wang",v:"Frontiers in Neurology 12, 637001",y:2021},
+ {t:"Association between the change of coagulation parameters and clinical prognosis in acute ischemic stroke patients after intravenous thrombolysis with rt-PA",a:"Y Wang, J Zhang, Z Cao, Q Zhang, X Zhao",v:"Clinical and Applied Thrombosis/Hemostasis 27, 10760296211039285",y:2021},
+ {t:"Association between tea consumption and cognitive impairment in middle-aged and older adults",a:"J Zhang, A Wang, X Zhang, S Chen, S Wu, X Zhao, Q Zhang",v:"BMC Geriatrics 20(1), 447",y:2020,f:1},
+ {t:"Association between asymptomatic vulnerable carotid plaques and cognitive impairment in rural adults",a:"J Zhang, Z Wang, M Zhou, J Jia, Y Liu, A Wang, M Guo, S Chen, X Zhao",v:"Frontiers in Neurology 11, 662",y:2020,f:1},
+ {t:"In-hospital venous thromboembolism is associated with poor outcome in patients with spontaneous intracerebral hemorrhage: a multicenter, prospective study",a:"J Li, D Wang, W Wang, J Jia, K Kang, J Zhang, X Zhao",v:"Journal of Stroke and Cerebrovascular Diseases 29(8), 104958",y:2020},
+ {t:"Clinical characteristics and long-term outcome of headaches associated with moyamoya disease in the Chinese population: a cohort study",a:"B Gao, K Kang, J Zhang, D Zhang, X Zhao",v:"Frontiers in Neurology 11, 605636",y:2020},
+ {t:"Association of diabetes status with cognitive impairment in two Chinese rural communities",a:"M Guo, K Kang, A Wang, J Jia, J Zhang, Y Wang, D Wang, S Chen, …",v:"Journal of the Neurological Sciences 415, 116894",y:2020},
+ {t:"Association between cumulative exposure to increased low-density lipoprotein cholesterol and the prevalence of asymptomatic intracranial atherosclerotic stenosis",a:"K Kang, Y Wang, J Wu, A Wang, J Zhang, J Xu, Y Ju, X Zhao",v:"Frontiers in Neurology 11, 555274",y:2020},
+ {t:"Relationship between time-dependent proteinuria and risk of stroke in population with different glucose tolerance status",a:"A Wang, J Zhang, J Li, H Li, Y Zuo, W Lv, S Chen, J Li, X Meng, S Wu, …",v:"Journal of the American Heart Association 9(13), e015776",y:2020},
+ {t:"Comparison of prognostic models of spontaneous intracerebral hemorrhage: potential tools for personalized care and clinical trial in ICH",a:"R Ji, W Wang, X Liu, L Wang, R Jiang, R Zhang, D Wang, J Jia, H Feng, …",v:"Venue not listed",y:2020},
+ {t:"Association between non-high-density lipoprotein cholesterol levels and asymptomatic vulnerable carotid atherosclerotic plaques",a:"J Wu, J Zhang, A Wang, S Chen, S Wu, X Zhao",v:"European Journal of Neurology 26(12), 1433-1438",y:2019},
+ {t:"The safety of antithrombotic therapy in patients with cerebral microbleeds and cardiogenic cerebral embolism due to nonvalvular atrial fibrillation",a:"J Wang, J Zhang, Y Shen, X Xu",v:"BMC Cardiovascular Disorders 19(1), 77",y:2019},
+ {t:"Association between H-type hypertension and asymptomatic extracranial artery stenosis",a:"J Zhang, Y Liu, A Wang, D Wang, R Jiang, J Jia, S Chen, X Zhao",v:"Scientific Reports 8(1), 1328",y:2018,f:1},
+ {t:"Association of persistent, incident, and remittent proteinuria with stroke risk in patients with diabetes mellitus or prediabetes mellitus",a:"A Wang, R Jiang, Z Su, J Zhang, X Zhao, S Wu, X Guo",v:"Journal of the American Heart Association 6(10), e006178",y:2017}
+];
+
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function markAuthors(a) {
+  return esc(a).replace(/\bJ Zhang\b/g, '<span class="me">J Zhang</span>');
+}
+
+var PER_PAGE = 15;
+var SORTED = PUBS.slice().sort(function (a, b) { return b.y - a.y; });
+var PAGES = Math.ceil(SORTED.length / PER_PAGE);
+var page = 1;
+
+var elPubs = document.getElementById("pubs");
+var elPager = document.getElementById("pager");
+
+function renderPubs() {
+  var start = (page - 1) * PER_PAGE;
+  var slice = SORTED.slice(start, start + PER_PAGE);
+  var html = "", lastYear = null;
+
+  slice.forEach(function (p) {
+    if (p.y !== lastYear) {
+      html += '<p class="yearhead">' + p.y + "</p>";
+      lastYear = p.y;
+    }
+    var url = "https://scholar.google.com/scholar?q=" + encodeURIComponent(p.t);
+    var badges = p.n ? '<span class="badge">' + esc(p.n) + "</span>" : "";
+    html += '<article class="pub">' +
+      '<p class="pub-title"><a href="' + url + '">' + esc(p.t) + "</a></p>" +
+      '<p class="pub-authors">' + markAuthors(p.a) + "</p>" +
+      '<div class="pub-meta"><span class="venue">' + esc(p.v) + "</span>" + badges + "</div>" +
+    "</article>";
+  });
+  elPubs.innerHTML = html;
+
+  var pager = '<button class="pg" data-p="' + (page - 1) + '"' +
+              (page === 1 ? " disabled" : "") + ">&larr; Prev</button>";
+  for (var i = 1; i <= PAGES; i++) {
+    pager += '<button class="pg" data-p="' + i + '"' +
+             (i === page ? ' aria-current="page"' : "") + ">" + i + "</button>";
+  }
+  pager += '<button class="pg" data-p="' + (page + 1) + '"' +
+           (page === PAGES ? " disabled" : "") + ">Next &rarr;</button>" +
+           '<span class="pgcount">' + (start + 1) + "–" +
+           (start + slice.length) + " of " + SORTED.length + "</span>";
+  elPager.innerHTML = pager;
+}
+
+elPager.addEventListener("click", function (e) {
+  var btn = e.target.closest(".pg");
+  if (!btn || btn.disabled) return;
+  var p = parseInt(btn.dataset.p, 10);
+  if (!p || p < 1 || p > PAGES || p === page) return;
+  page = p;
+  renderPubs();
+  document.getElementById("publications")
+    .scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+renderPubs();
+</script>
+</body>
+</html>
